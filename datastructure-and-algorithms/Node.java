@@ -2,16 +2,15 @@ public class Node {
     private Integer data;
     private Node next;
 
-    public Node(Integer data, Node next) {
+    public Node(Integer data) {
         this.data = data;
-        this.next = next;
     }
 
     public Integer getData() {
         return this.data;
     }
 
-    public Node getNext(){
+    public Node getNext() {
         return this.next;
     }
 

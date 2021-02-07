@@ -1,7 +1,7 @@
-public class LinkedList {
+public class SingleLinkedList {
     private Node head;
-    
-    public LinkedList(Node head) {
+
+    public SingleLinkedList(Node head) {
         this.head = head;
     }
 
