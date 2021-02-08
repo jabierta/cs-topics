@@ -1,16 +1,17 @@
-public class Node {
+public class SingleLinkNode {
     private Integer data;
-    private Node next;
+    private SingleLinkNode next;
 
-    public Node(Integer data) {
+    public SingleLinkNode(Integer data) {
         this.data = data;
+        this.next = null;
     }
 
     public Integer getData() {
         return this.data;
     }
 
-    public Node getNext() {
+    public SingleLinkNode getNext() {
         return this.next;
     }
 
@@ -18,8 +19,7 @@ public class Node {
         this.data = data;
     }
 
-    public void setNext(Node next) {
+    public void setNext(SingleLinkNode next) {
         this.next = next;
     }
-
 }
