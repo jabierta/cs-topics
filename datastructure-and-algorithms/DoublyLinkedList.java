@@ -21,7 +21,7 @@ public class DoublyLinkedList {
         this.head = head;
     }
 
-    public void addNode(Integer data) {
+    public void append(Integer data) {
         DoubleLinkNode node = new DoubleLinkNode(data);
         if (head == null) {
             node.setPrevNode(null);
@@ -37,14 +37,22 @@ public class DoublyLinkedList {
         }
     }
 
-    public void addNodeAfter(Integer data) {
+    public void addNodeAfter(DoubleLinkNode beforeNode, Integer data) {
     }
+
+    public void prepend(Integer data) {
+    }
+
 
     public void printForwardPretty() {
 
     }
 
     public void printBackwardPretty() {
+
+    }
+
+    public void deleteNode(DoubleLinkNode node) {
 
     }
 }
