@@ -1,3 +1,5 @@
+package src.linkedlist;
+
 public class DoubleLinkNode {
     private Integer data;
     private DoubleLinkNode nextNode;

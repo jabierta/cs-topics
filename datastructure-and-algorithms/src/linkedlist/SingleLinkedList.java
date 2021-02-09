@@ -1,3 +1,5 @@
+package src.linkedlist;
+
 public class SingleLinkedList {
     private SingleLinkNode head;
 

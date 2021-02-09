@@ -1,3 +1,5 @@
+package src.linkedlist;
+
 public class SingleLinkNode {
     private Integer data;
     private SingleLinkNode next;

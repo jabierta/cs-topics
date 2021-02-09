@@ -1,7 +1,9 @@
-public class CircularLinkedList {
+package src.linkedlist;
+
+public class DoubleCircularLinkedList {
     private DoubleLinkNode head;
 
-    public CircularLinkedList() {
+    public DoubleCircularLinkedList() {
     }
 
     public DoubleLinkNode getHead() {

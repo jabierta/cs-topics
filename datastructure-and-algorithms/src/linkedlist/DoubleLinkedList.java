@@ -1,8 +1,10 @@
-public class DoublyLinkedList {
+package src.linkedlist;
+
+public class DoubleLinkedList {
     private DoubleLinkNode head;
     private DoubleLinkNode tail;
 
-    public DoublyLinkedList() {
+    public DoubleLinkedList() {
     }
 
     public DoubleLinkNode getTail() {
