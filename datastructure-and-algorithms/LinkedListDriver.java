@@ -20,7 +20,7 @@ public class LinkedListDriver {
         thirdNode.setNext(fourthNode);
 
         SingleLinkNode fifthNode = new SingleLinkNode(4);
-        System.out.println("Adding Node(" + fifthNodegetData());
+        System.out.println("Adding Node(" + fifthNode.getData());
         fourthNode.setNext(fifthNode);
 
         fifthNode.setNext(null);

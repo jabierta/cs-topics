@@ -39,4 +39,12 @@ public class DoublyLinkedList {
 
     public void addNodeAfter(Integer data) {
     }
+
+    public void printForwardPretty() {
+
+    }
+
+    public void printBackwardPretty() {
+
+    }
 }
