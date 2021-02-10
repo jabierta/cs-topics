@@ -5,4 +5,12 @@ public class SingleCircularLinkedList {
 
     public SingleCircularLinkedList() {
     }
+
+    public SingleLinkNode getHead() {
+        return head;
+    }
+
+    public void setHead(SingleLinkNode head) {
+        this.head = head;
+    }
 }

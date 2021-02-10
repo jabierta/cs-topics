@@ -36,7 +36,13 @@ public class Stack {
     }
 
     public Integer peek() {
-        return null;
+        Integer data = null;
+        if (!isEmpty()) {
+            data = stack[indexOfTop];
+        } else {
+            System.out.println("Stack is emtpy!");
+        }
+        return data;
     }
 
     public boolean isFull() {
