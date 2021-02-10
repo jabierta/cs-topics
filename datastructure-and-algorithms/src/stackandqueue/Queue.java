@@ -1,6 +1,5 @@
 package src.stackandqueue;
 
-import java.security.DrbgParameters.Capability;
 
 public class Queue {
     private int rear;
