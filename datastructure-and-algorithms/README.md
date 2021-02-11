@@ -4,3 +4,4 @@ But adds the addtional feature that enables you to play around the objects thems
 Games like guessing what the end structure would be based on an algorithm
 for example how would a bubble sort this array step by step?
 
+It would be good to insert Time complexity of each operations.

@@ -1,6 +1,5 @@
 package src.stackandqueue;
 
-
 public class Queue {
     private int rear;
     private int front;
