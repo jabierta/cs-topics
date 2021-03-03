@@ -1,6 +1,7 @@
 package src;
 
 import src.linkedlist.LinkedListDriver;
+import src.sorting.SortDriver;
 
 public class Application {
     public static void main(String args[]) {
@@ -8,5 +9,8 @@ public class Application {
 
         LinkedListDriver linkedListDriver = new LinkedListDriver();
         linkedListDriver.run();
+
+        SortDriver sortDriver = new SortDriver();
+        sortDriver.run();
     }
 }

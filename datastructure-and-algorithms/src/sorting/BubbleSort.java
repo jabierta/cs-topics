@@ -2,6 +2,10 @@ package src.sorting;
 
 public class BubbleSort {
     // method for sorting array
+
+    public Integer[] sortArray(Integer[] unsortedArray) {
+        return null;
+    }
     // method for sorting linked list
     // sort queue
     // sort stack
