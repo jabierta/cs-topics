@@ -7,8 +7,6 @@ public class SortDriver {
     public void run() {
         System.out.println("Sorting Algorithms");
         System.out.println("NOTE: All Sorting algorithms are sorting in ascending direction!");
-        BubbleSort bubbleSort = new BubbleSort();
-
         Random random = new Random();
 
         Integer[] unsortedArray = new Integer[random.nextInt(50)];
@@ -18,10 +16,21 @@ public class SortDriver {
         }
 
         System.out.println("========================BUBBLE SORT========================");
+        BubbleSort bubbleSort = new BubbleSort();
         System.out.println("Unsorted Array: ");
         this.print(unsortedArray);
         System.out.println("\nSorted Array: ");
         this.print(bubbleSort.sortArray(unsortedArray));
+        System.out.println("========================BUBBLE SORT========================");
+
+        System.out.println("========================QUICK SORT========================");
+        QuickSort quickSort = new QuickSort();
+        System.out.println("Unsorted Array: ");
+        this.print(unsortedArray);
+        System.out.println("\nSorted Array: ");
+        this.print(quickSort.sortArray(unsortedArray));
+        System.out.println("========================QUICK SORT========================");
+
 
     }
 
