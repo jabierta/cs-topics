@@ -5,11 +5,13 @@ import java.util.Random;
 public class SortDriver {
 
     public void run() {
+        System.out.println("Sorting Algorithms");
+        System.out.println("NOTE: All Sorting algorithms are sorting in ascending direction!");
         BubbleSort bubbleSort = new BubbleSort();
 
         Random random = new Random();
 
-        Integer[] unsortedArray = new Integer[random.nextInt(100)];
+        Integer[] unsortedArray = new Integer[random.nextInt(50)];
 
         for (int i = 0; i < unsortedArray.length; i++) {
             unsortedArray[i] = random.nextInt(100);
@@ -18,7 +20,7 @@ public class SortDriver {
         System.out.println("========================BUBBLE SORT========================");
         System.out.println("Unsorted Array: ");
         this.print(unsortedArray);
-        System.out.println("Sorted Array: ");
+        System.out.println("\nSorted Array: ");
         this.print(bubbleSort.sortArray(unsortedArray));
 
     }
