@@ -15,22 +15,23 @@ public class SortDriver {
             unsortedArray[i] = random.nextInt(100);
         }
 
-        System.out.println("========================BUBBLE SORT========================");
-        BubbleSort bubbleSort = new BubbleSort();
-        System.out.println("Unsorted Array: ");
-        this.print(unsortedArray);
-        System.out.println("\nSorted Array: ");
-        this.print(bubbleSort.sortArray(unsortedArray));
-        System.out.println("========================BUBBLE SORT========================");
+        // System.out.println("========================BUBBLE SORT========================");
+        // BubbleSort bubbleSort = new BubbleSort();
+        // System.out.println("Unsorted Array: ");
+        // this.print(unsortedArray);
+        // System.out.println("\nSorted Array: ");
+        // this.print(bubbleSort.sortArray(unsortedArray));
+        // System.out.println("\n========================BUBBLE SORT========================");
 
-        System.out.println("========================QUICK SORT========================");
+        System.out.println("\n========================QUICK SORT========================");
         QuickSort quickSort = new QuickSort();
         System.out.println("Unsorted Array: ");
+        unsortedArray = new Integer[] {5, 3, 1, 4, 6};
         this.print(unsortedArray);
         System.out.println("\nSorted Array: ");
         this.print(quickSort.sortArray(unsortedArray));
-        System.out.println("========================QUICK SORT========================");
-
+        System.out.println("\n========================QUICK SORT========================");
+            
 
     }
 
