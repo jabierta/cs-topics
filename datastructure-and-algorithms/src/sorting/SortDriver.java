@@ -51,7 +51,7 @@ public class SortDriver {
             }
         }
         System.out.print("]");
-    }c
+    }
 
     private Integer[] generateValuesForIntegerArray() {
         Random random = new Random();
