@@ -7,7 +7,7 @@ public class SortDriver {
     public void run() {
         System.out.println("Sorting Algorithms");
         System.out.println("NOTE: All Sorting algorithms are sorting in ascending direction!");
-        
+
         Integer[] unsortedArray = this.generateValuesForIntegerArray();
 
         System.out.println("========================BUBBLE SORT========================");
@@ -39,6 +39,15 @@ public class SortDriver {
         this.print(mergeSort.sortArray(unsortedArray));
         System.out.println("\n========================MERGE SORT========================");
 
+
+        System.out.println("\n========================COUNTING SORT========================");
+        CountingSort countingSort = new CountingSort();
+        unsortedArray = this.generateValuesForIntegerArray();
+        System.out.println("Unsorted Array: ");
+        this.print(unsortedArray);
+        System.out.println("\nSorted Array: ");
+        this.print(countingSort.sortArray(unsortedArray, 100));
+        System.out.println("\n========================COUNTING SORT========================");
 
     }
 
