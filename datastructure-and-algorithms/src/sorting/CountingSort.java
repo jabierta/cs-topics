@@ -6,9 +6,9 @@ public class CountingSort {
      * unsorted set PROS: Linear Time Execution CONS: Space that is the size of range to keep track
      * of counts. Needs special implementations for non integer sets of unsorted elements.
      * 
-     * Time Complexity: O(n+k), in the case of my algorithm it is O(3n)
+     * Time Complexity: O(n+k), in the case of my algorithm it is O(2n + k)
      * 
-     * Space Complexity: O(k)
+     * Space Complexity: O(k), in the case of my algorithm it is O(n + k)
      */
 
     /*
