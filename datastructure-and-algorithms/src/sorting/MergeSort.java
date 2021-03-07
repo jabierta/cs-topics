@@ -14,7 +14,7 @@ public class MergeSort {
         if (array.length <= 1) {
             return array;
         }
-
+        // Maybe we can use Arrays.copyRangeOf
         Integer[] leftArray = new Integer[(array.length + 1) / 2];
         Integer[] rightArray = new Integer[(array.length - leftArray.length)];
 
