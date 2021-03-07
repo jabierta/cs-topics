@@ -3,6 +3,7 @@ package src.treesandgraphs;
 public class BinarySearchTree {
     public void run() {
         Node rootNode = new Node(10);
+        // Randomly generate data and insert
         rootNode.insert(5);
         rootNode.insert(15);
         System.out.print("Pre Order: ");
