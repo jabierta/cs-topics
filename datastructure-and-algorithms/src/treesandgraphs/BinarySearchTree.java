@@ -1,6 +1,18 @@
 package src.treesandgraphs;
 
 public class BinarySearchTree {
+    public void run() {
+        Node rootNode = new Node(10);
+        rootNode.insert(5);
+        rootNode.insert(15);
+        System.out.print("Pre Order: ");
+        rootNode.printPreOrder();
+        System.out.print("\nIn Order: ");
+        rootNode.printInOrder();
+        System.out.print("\nPost Order: ");
+        rootNode.printPostOrder();
+
+    }
 
     // BST is a tree where all the nodes on the left sub tree is less than the root node
     // and the right sub tree is more than the value of root node
@@ -17,20 +29,20 @@ public class BinarySearchTree {
         // Will return the first occurrence where node.getData == data
         // Returns null if not found;
         //
-        private Node search(int data) {
-            if (this.data == data) {
+        private Node search(int value) {
+            if (this.data == value) {
                 return this;
             }
 
-            if (this.getData() < data) {
+            if (this.getData() < value) {
                 if (this.getLeftNode() != null) {
-                    return this.leftNode.search(data);
+                    return this.leftNode.search(value);
                 } else {
                     return null;
                 }
             } else {
                 if (this.getRightNode() != null) {
-                    return this.rightNode.search(data);
+                    return this.rightNode.search(value);
                 } else {
                     return null;
                 }
@@ -39,27 +51,65 @@ public class BinarySearchTree {
         }
 
         // Insert
-        private void insert(int data) {
-            if (data <= this.data) {
+        private void insert(int value) {
+            if (value <= this.data) {
                 if (this.leftNode == null) {
-                    this.leftNode = new Node(data);
+                    this.leftNode = new Node(value);
                 } else {
-                    this.leftNode.insert(data);
+                    this.leftNode.insert(value);
                 }
             } else {
                 if (this.rightNode == null) {
-                    this.rightNode = new Node(data);
+                    this.rightNode = new Node(value);
                 } else {
-                    this.rightNode.insert(data);
+                    this.rightNode.insert(value);
                 }
             }
         }
 
+        // Traversal complexity is O(n)
+        // 10
+        // 5 15
+        // Pre-order Traversal: 10 5 15
+        // In-order Traversal: 5 10 15
+        // Post-order Traversal: 5 15 10
 
-        // Pre-order Traversal
-        // In-order Traversal
-        // Post-order Traversal
+        public void printPreOrder() {
+            System.out.print(this.data + " ");
 
+            if (leftNode != null) {
+                leftNode.printPreOrder();
+            }
+
+
+            if (rightNode != null) {
+                rightNode.printPreOrder();
+            }
+        }
+
+        public void printInOrder() {
+            if (this.leftNode != null) {
+                this.leftNode.printInOrder();
+            }
+
+            System.out.print(this.data + " ");
+
+            if (this.rightNode != null) {
+                this.rightNode.printInOrder();
+            }
+        }
+
+        public void printPostOrder() {
+            if (this.rightNode != null) {
+                this.rightNode.printInOrder();
+            }
+
+            if (this.leftNode != null) {
+                this.leftNode.printInOrder();
+            }
+
+            System.out.print(this.data + " ");
+        }
 
         // Getters and Setters
         public Node getLeftNode() {
@@ -86,4 +136,5 @@ public class BinarySearchTree {
             this.leftNode = leftNode;
         }
     }
+
 }
