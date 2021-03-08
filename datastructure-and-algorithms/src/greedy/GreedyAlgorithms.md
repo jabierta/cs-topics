@@ -1,3 +1,3 @@
 # Greedy Algorithms
-Building a solution piece by piece by always choosing the next piece that offers the most obvious and immediate benefit. This leads to finding local maximums instead of global maximum.
+Building a solution piece by piece by always choosing the next piece that offers the most obvious and immediate benefit (usually this involves sorting and figuring out how to calculate the "value/benefit" of current choice). This leads to finding local maximums instead of global maximum.
 Greedy heuristic doesn't guarantee the the best optimal solution, but it does provide the local maximum that is calculated in a reasonable amount of time. 

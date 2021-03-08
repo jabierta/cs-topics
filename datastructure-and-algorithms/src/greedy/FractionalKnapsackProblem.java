@@ -26,12 +26,12 @@ public class FractionalKnapsackProblem {
                 currentCapacityOfKnapsack = currentCapacityOfKnapsack - knapsackItem.getWeight();
                 maximumValueOfCombinedItems += knapsackItem.getValue();
                 System.out
-                        .println("We are using the full weight and value of this knapsack weight: "
+                        .println("We are using the full weight and value of this item weight: "
                                 + knapsackItem.getWeight() + ", value: " + knapsackItem.getValue());
             } else {
                 double ratio = currentCapacityOfKnapsack / knapsackItem.getWeight();
                 System.out.println(
-                        "We are using the a fraction of the weight and a fraction of the value of this knapsack weight: "
+                        "We are using the a fraction of the weight and a fraction of the value of this item weight: "
                                 + currentCapacityOfKnapsack + ", value: "
                                 + (knapsackItem.getValue() * ratio));
                 maximumValueOfCombinedItems += knapsackItem.getValue() * ratio;
