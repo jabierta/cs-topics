@@ -26,7 +26,6 @@ public class CountThePaths {
                 + countPathTabulation(dynamicProgrammingMatrix));
     }
 
-
     // TODO: fill this out!
     private void generateMatrixData(int[][] recursionCountPathMatrix) {
     }
