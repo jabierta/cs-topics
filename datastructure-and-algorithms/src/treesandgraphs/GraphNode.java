@@ -45,7 +45,9 @@ public class GraphNode {
     }
 
 
-    // Depth First Search DFS
+    // Depth First Search (DFS) is a search algorithm that traverses/searches through the graph/tree
+    // The algorithm searches the whole depth of a given node before backtracking back to the node.
+    // The depth first search
     // Implemented through a recursive algorithm keeping in mind that cycles can happen
     // PROS
     // CONS: and edge case where we ran away farther from the goal
@@ -91,6 +93,7 @@ public class GraphNode {
             if (node == destination) {
                 return true;
             }
+
             if (visited.contains(node.getId())) {
                 continue;
             }
