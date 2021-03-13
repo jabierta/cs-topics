@@ -5,8 +5,7 @@ import java.util.List;
 
 public class MinimumSumOfTriosInAGraphProblem {
 
-
-    public void buildGraph() {
+    public void buildGraph(int[] nodesFrom, int[] nodesTo) {
 
     }
 
