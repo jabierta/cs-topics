@@ -124,4 +124,27 @@ public class GraphAdjacencyList implements Graph {
 
         return null;
     }
+
+    @Override
+    public boolean hasPathDFS(int sourceVertex, int destinationVertex) {
+        return false;
+    }
+
+    @Override
+    public boolean hasPathBFS(int sourceVertex, int destinationVertex) {
+
+        return false;
+    }
+
+    @Override
+    public void printUsingDFS() {
+
+    }
+
+    @Override
+    public void printUsingBFS() {
+
+    }
+
+
 }

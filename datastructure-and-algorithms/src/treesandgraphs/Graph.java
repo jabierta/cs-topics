@@ -21,4 +21,12 @@ public interface Graph {
     boolean isConnected(int vertex1, int vertex2);
 
     int[] neighbors(int vertex);
+
+    boolean hasPathDFS(int sourceVertex, int destinationVertex);
+
+    boolean hasPathBFS(int sourceVertex, int destinationVertex);
+
+    void printUsingDFS();
+
+    void printUsingBFS();
 }
