@@ -1,5 +1,5 @@
 package src.backtracking;
 
-public class NQuenProblem {
+public class NQueenProblem {
 
 }
