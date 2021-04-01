@@ -1,15 +1,9 @@
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 
-public class Solution {
+public class CountingInversions {
     static long numberOfSwaps = 0;
 
-    // Complete the countInversions function below.
+    // https://www.hackerrank.com/challenges/ctci-merge-sort/problem
     static long countInversions(int[] arr) {
         mergeSort(arr);
         return numberOfSwaps;

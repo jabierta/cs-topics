@@ -1,4 +1,4 @@
-package src.backtracking;
+package src.sorting;
 
 import java.util.ArrayList;
 import java.util.List;
